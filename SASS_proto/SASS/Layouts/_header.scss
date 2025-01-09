@@ -1,0 +1,50 @@
+@use "../Utils/variables" as var;
+
+.header-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  nav {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 42px;
+    font-size: 20px;
+  }
+}
+
+.header-homepage {
+  flex-direction: column;
+  z-index: 2;
+
+  .header__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #eaeaea;
+    box-shadow:
+      0px -4px 4px 0px #00000040,
+      0px 4px 4px 0px #00000040;
+  }
+}
+
+.header__title {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: var.$font-secondary;
+  box-shadow: 0px 2px 4px 0px #00000026;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,42 @@
+//************* HOMEPAGE : LOADER******************
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    display: flex;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  50% {
+    opacity: 0.5;
+    display: flex;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//************* PAGE MENU : APPARITION DES PLATS******************
+@keyframes appear {
+  from {
+    transform: translateX(-600px);
+    opacity: 0%;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}

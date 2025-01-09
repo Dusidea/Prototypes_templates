@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ohmyfood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../public/main.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header class="header-main">
+        <nav>
+          <a href="../index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </nav>
+        <h1 class="header__title">ohmyfood</h1>
+      </header>
+      <img
+        class="main-container__image"
+        src="../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="photographie d'un plat du restaurant la palette du goût"
+      />
+      <div class="frameandfooter frameandfooter-menu">
+        <main class="main__frame main__frame-menu">
+          <section class="main__frame-menu__title">
+            <h2 class="main__frame-menu__title__name">La palette du goût</h2>
+            <i class="fa-regular fa-heart child_like index_like">
+              <input type="checkbox" class="like-checkbox" />
+              <i class="fa-solid fa-heart child_like-selected"></i>
+            </i>
+          </section>
+          <section class="main__frame__section">
+            <h3 class="main__frame__section__title">ENTRÉES</h3>
+            <div class="main__frame__section__title__line"></div>
+            <a class="main__frame__section__card" href="#">
+              <div class="main__frame__section__card__txt">
+                <h4 class="main__frame__section__card__item">
+                  Fricassée d'escargots
+                </h4>
+                <p class="main__frame__section__card__description">
+                  Au piment d'Espelette
+                </p>
+              </div>
+              <div class="main__frame__section__card__price">25 €</div>
+              <div class="main__frame__section__card-selected">
+                <i class="fa-solid fa-circle-check itemcheck"></i>
+              </div>
+            </a>
+            <a class="main__frame__section__card" href="#">
+              <div class="main__frame__section__card__txt">
+                <h4 class="main__frame__section__card__item">
+                  Foie gras de canard mi-cuit
+                </h4>
+                <p class="main__frame__section__card__description">
+                  Et ses copeaux de truffe noire
+                </p>
+              </div>
+              <div class="main__frame__section__card__price">35 €</div>
+              <div class="main__frame__section__card-selected">
+                <i class="fa-solid fa-circle-check itemcheck"></i>
+              </div>
+            </a>
+            <a class="main__frame__section__card" href="#">
+              <div class="main__frame__section__card__txt">
+                <h4 class="main__frame__section__card__item">Œuf au plat</h4>
+                <p class="main__frame__section__card__description">
+                  Assaisonné à la truffe sur lit de caviar
+                </p>
+              </div>
+              <div class="main__frame__section__card__price">20 €</div>
+              <div class="main__frame__section__card-selected">
+                <i class="fa-solid fa-circle-check itemcheck"></i>
+              </div>
+            </a>
+          </section>
+          <section class="main__frame__section">
+            <h3 class="main__frame__section__title">PLATS</h3>
+            <div class="main__frame__section__title__line"></div>
+            <a class="main__frame__section__card" href="#">
+              <div class="main__frame__section__card__txt">
+                <h4 class="main__frame__section__card__item">
+                  Filet de bœuf aux herbes
+                </h4>
+                <p class="main__frame__section__card__description">
+                  Accompagné de sa ribambelle de légumes
+                </p>
+              </div>
+              <div class="main__frame__section__card__price">40 €</div>
+              <div class="main__frame__section__card-selected">
+                <i class="fa-solid fa-circle-check itemcheck"></i>
+              </div>
+            </a>
+            <a class="main__frame__section__card" href="#">
+              <div class="main__frame__section__card__txt">
+                <h4 class="main__frame__section__card__item">
+                  Parmentier de queue de bœuf
+                </h4>
+                <p class="main__frame__section__card__description">
+                  À la truffe noire sur sa purée de panais
+                </p>
+              </div>
+              <div class="main__frame__section__card__price">35 €</div>
+              <div class="main__frame__section__card-selected">
+                <i class="fa-solid fa-circle-check itemcheck"></i>
+              </div>
+            </a>
+            <a class="main__frame__section__card" href="#">
+              <div class="main__frame__section__card__txt">
+                <h4 class="main__frame__section__card__item">
+                  Filet de turbot
+                </h4>
+                <p class="main__frame__section__card__description">
+                  Aux agrumes
+                </p>
+              </div>
+              <div class="main__frame__section__card__price">44 €</div>
+              <div class="main__frame__section__card-selected">
+                <i class="fa-solid fa-circle-check itemcheck"></i>
+              </div>
+            </a>
+          </section>
+          <section class="main__frame__section">
+            <h3 class="main__frame__section__title">DESSERTS</h3>
+            <div class="main__frame__section__title__line"></div>
+            <a class="main__frame__section__card" href="#">
+              <div class="main__frame__section__card__txt">
+                <h4 class="main__frame__section__card__item">Paris-Brest</h4>
+                <p class="main__frame__section__card__description">Revisité</p>
+              </div>
+              <div class="main__frame__section__card__price">18 €</div>
+              <div class="main__frame__section__card-selected">
+                <i class="fa-solid fa-circle-check itemcheck"></i>
+              </div>
+            </a>
+            <a class="main__frame__section__card" href="#">
+              <div class="main__frame__section__card__txt">
+                <h4 class="main__frame__section__card__item">
+                  Macaron au chocolat d'exception
+                </h4>
+                <p class="main__frame__section__card__description">
+                  Et glace à la vanille de Madagascar
+                </p>
+              </div>
+              <div class="main__frame__section__card__price">22 €</div>
+              <div class="main__frame__section__card-selected">
+                <i class="fa-solid fa-circle-check itemcheck"></i>
+              </div>
+            </a>
+            <a class="main__frame__section__card" href="#">
+              <div class="main__frame__section__card__txt">
+                <h4 class="main__frame__section__card__item">
+                  Mousse au chocolat
+                </h4>
+                <p class="main__frame__section__card__description">
+                  Au piment d'Espelette et à la truffe noire
+                </p>
+              </div>
+              <div class="main__frame__section__card__price">23 €</div>
+              <div class="main__frame__section__card-selected">
+                <i class="fa-solid fa-circle-check itemcheck"></i>
+              </div>
+            </a>
+          </section>
+          <div class="main__frame__order">
+            <a class="main__frame__order__button main__frame__button" href="#"
+              >Commander</a
+            >
+          </div>
+        </main>
+        <footer>
+          <h4 class="footer__title">ohmyfood</h4>
+          <div class="footer__section">
+            <a class="footer__section__link" href="#">
+              <i class="fa-solid fa-utensils footer__section__link_icon"></i
+              >Proposer un restaurant
+            </a>
+            <a class="footer__section__link" href="#">
+              <i
+                class="fa-solid fa-handshake-angle footer__section__link_icon"
+              ></i>
+              Devenir partenaire
+            </a>
+            <a class="footer__section__link-light" href="#">Mentions légales</a>
+            <a
+              class="footer__section__link-light"
+              href="mailto:serviceclients@mail.fr"
+              >Contact</a
+            >
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

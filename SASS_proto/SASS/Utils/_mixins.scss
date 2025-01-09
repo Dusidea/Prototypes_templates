@@ -1,0 +1,8 @@
+@use "./maps";
+@use "sass:map";
+
+@mixin desktop {
+  @media screen and (min-width: map.get(maps.$breakpoints, desktop)) {
+    @content;
+  }
+}

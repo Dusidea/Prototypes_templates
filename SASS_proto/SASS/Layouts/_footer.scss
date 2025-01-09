@@ -1,0 +1,67 @@
+@use "../Utils/variables" as var;
+@use "../Utils/maps" as maps;
+@use "../Utils/mixins";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var.$background-dark;
+  color: white;
+  padding: 22px 25px 22px 25px;
+  gap: 16px;
+
+  @include mixins.desktop {
+    flex-direction: row-reverse;
+    padding: 30px 25px 30px 25px;
+    width: 100%;
+  }
+}
+
+.footer__title {
+  font-family: var.$font-secondary;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 7px;
+
+  @include mixins.desktop {
+    flex-direction: row;
+  }
+}
+
+.footer__section__link {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+
+  @include mixins.desktop {
+    width: 190px;
+  }
+}
+
+.footer__section__link-light {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+
+  @include mixins.desktop {
+    width: 130px;
+  }
+}
+
+.footer__section__link_icon {
+  font-size: 13px;
+  padding-right: 11px;
+}

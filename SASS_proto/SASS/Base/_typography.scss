@@ -1,0 +1,9 @@
+:root {
+  --font-main: "Roboto", sans-serif;
+  --font-secondary: "Shrikhand", serif;
+}
+
+* {
+  font-family: var(--font-main);
+  box-sizing: border-box;
+}

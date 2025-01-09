@@ -1,0 +1,65 @@
+@use "../Utils/variables" as var;
+@use "../Utils/keyframes";
+@use "../Utils/maps" as maps;
+@use "../Utils/mixins";
+
+.main__frame__section2__list_like {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 200px;
+  right: 25px;
+  z-index: 4;
+}
+
+.child_like {
+  display: flex;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.index_like {
+  margin-left: 30px;
+  position: absolute;
+  right: 30px;
+  opacity: 0.7;
+
+  @include mixins.desktop {
+    position: relative;
+    right: 0;
+  }
+}
+
+.child_like-selected {
+  display: flex;
+  background: var.$button-gradient;
+  color: transparent;
+  background-clip: text;
+  font-size: 22px;
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.like-checkbox {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.like-checkbox:checked + .child_like-selected {
+  opacity: 1;
+}

@@ -1,0 +1,35 @@
+@use "../Utils/variables" as var;
+@use "../Utils/keyframes";
+@use "../Utils/maps" as maps;
+@use "../Utils/mixins";
+
+.main__frame__section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  opacity: 0;
+  animation: appear 1000ms ease-out forwards;
+
+  @include mixins.desktop {
+    width: 100%;
+  }
+
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: $i * 0.1s;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+    position: relative;
+
+    &__line {
+      width: 40px;
+      border-bottom: 3px solid;
+      border-bottom-color: var.$light-green;
+    }
+  }
+}
